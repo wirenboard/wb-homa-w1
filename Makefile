@@ -35,7 +35,13 @@ main.o : main.cpp $(W1_H)
 sysfs_w1.o : sysfs_w1.cpp $(W1_H)
 	${CXX} -c $< -o $@ ${CFLAGS}
 
-$(W1_BIN) : main.o sysfs_w1.o
+temperature_w1.o : temperature_w1.cpp $(W1_H)
+	${CXX} -c $< -o $@ ${CFLAGS}
+
+potentiometer_w1.o : potentiometer_w1.cpp $(W1_H)
+	${CXX} -c $< -o $@ ${CFLAGS}
+
+$(W1_BIN) : main.o sysfs_w1.o temperature_w1.o potentiometer_w1.o
 	${CXX} $^ ${LDFLAGS} -o $@
 
 
