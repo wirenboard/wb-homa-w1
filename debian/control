@@ -14,8 +14,8 @@ Conflicts: wb-homa-w1 (<< 2.0.1)
 Description: Wiren Board Smart Home MQTT generic 1-Wire (w1) driver compatible with HomA conventions
 
 Package: wb-homa-w1
-Depends: wb-mqtt-w1 (= ${source:Version}), ${misc:Depends}
-Architecture: all
+Depends: wb-mqtt-w1 (= ${binary:Version}), ${misc:Depends}
+Architecture: any
 Priority: extra
 Section: oldlibs
 Description: transitional dummy package

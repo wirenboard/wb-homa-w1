@@ -1,3 +1,9 @@
+wb-mqtt-w1 (2.0.3) stable; urgency=medium
+
+  * make transition package arch-dependent
+
+ -- Evgeny Boger <boger@contactless.ru>  Mon, 11 Jan 2021 16:02:16 +0300
+
 wb-mqtt-w1 (2.0.2) unstable; urgency=medium
 
   * alias to wb-homa-w1 is added
